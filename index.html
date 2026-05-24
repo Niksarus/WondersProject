@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <!--
+        <div class="logo-and-name">
+            <img src="./images/Logo_360.png" alt="logo">
+            <p class="poppins-regular">Wonders</p>
+        </div>
+        -->
+        <img src="./images/Logo_360.png" alt="logo">
+        <img src="./images/Menu_360.png" alt="burger">
+    </header>
+    <section class="form-header">
+        <H1 class="poppins-bold">Skip the Climbing, Catch the Bus</H1>
+        <p class="poppins-regular">We sell tickets to the best seats in the house – houses on wheels, that is! Get ready
+            for jaw-dropping views without breaking a sweat.</p>
+    </section>
+    <form class="form">
+        <div class="form-type-and-persons-counter poppins-regular">
+            <div class="radio">
+                <input type="radio" id="round-trip" name="trip-type" value="round-trip" checked>
+                <label for="round-trip">Round trip</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" id="one-way" name="trip-type" value="one-way">
+                <label for="one-way">One way</label>
+            </div>
+            <div class="people-counter">
+                <img src="./images/person-icon.png" alt="logo">
+                <img src="./images/Minus.png" alt="logo">
+                <p class="counter">1</p>
+                <img src="./images/Plus.png" alt="logo">
+            </div>
+        </div>
+        <p class="poppins-semibold">Departure</p>
+        <div class="form-departure poppins-medium">
+            <input type="text" id="departure" name="departure" placeholder="Your City/Station">
+        </div>
+        <p class="poppins-semibold">Arrival</p>
+        <div class="form-arrival poppins-medium">
+            <input type="text" id="arrival" name="arrival" placeholder="Where to?">
+        </div>
+        <p class="poppins-semibold">Pick your lucky day</p>
+        <div class="form-depart poppins-medium">
+            <input type="text" id="depart" name="depart" placeholder="Depart">
+        </div>
+        <div class="form-return poppins-medium">
+            <input type="text" id="return" name="return" placeholder="Return">
+        </div>
+        <button class="form-button">Find My Alpine Ride</button>
+        <div class="achievement-indicators">
+            
+        </div>
+    </form>
+</body>
+
+</html>
