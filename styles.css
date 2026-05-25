@@ -162,7 +162,30 @@ input[type="text"] {
 
 .achievement-indicators {
     display: grid;
-    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: rgb(5, 120, 255);
+    color: white;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.goal {
+    font-size: 40px;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.goal-text {
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 500;
 }
 
 /*
