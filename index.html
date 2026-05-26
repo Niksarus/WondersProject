@@ -13,13 +13,10 @@
 
 <body>
     <header class="header">
-        <!--
         <div class="logo-and-name">
             <img src="./images/Logo_360.png" alt="logo">
-            <p class="poppins-regular">Wonders</p>
+            <p class="header-text">Wonders</p>
         </div>
-        -->
-        <img src="./images/Logo_360.png" alt="logo">
         <img src="./images/Menu_360.png" alt="burger">
     </header>
     <section class="form-header">
@@ -45,20 +42,31 @@
                 <img src="./images/Plus.png" alt="logo">
             </div>
         </div>
-        <p class="poppins-semibold">Departure</p>
-        <div class="form-departure poppins-medium">
-            <input type="text" id="departure" name="departure" placeholder="Your City/Station">
+        <div class="form-inputs">
+            <div class="inputs-group-1">
+                <div class="poppins-semibold">Departure</div>
+                <div class="form-departure poppins-medium">
+                    <input type="text" id="departure" name="departure" placeholder="Your City/Station">
+                </div>
+            </div>
+            <div class="inputs-group-2">
+                <div class="poppins-semibold">Arrival</div>
+                <div class="form-arrival poppins-medium">
+                    <input type="text" id="arrival" name="arrival" placeholder="Where to?">
+                </div>
+            </div>
+            <div class="inputs-group-3">
+                <div class="poppins-semibold">Pick your lucky day</div>
+                <div class="form-depart poppins-medium">
+                    <input type="text" id="depart" name="depart" placeholder="Depart">
+                </div>
+            </div>
+            <div class="inputs-group-4">
+                <div class="form-return poppins-medium">
+                    <input type="text" id="return" name="return" placeholder="Return">
+                </div>
+            </div>
         </div>
-        <p class="poppins-semibold">Arrival</p>
-        <div class="form-arrival poppins-medium">
-            <input type="text" id="arrival" name="arrival" placeholder="Where to?">
-        </div>
-        <p class="poppins-semibold">Pick your lucky day</p>
-        <div class="form-depart poppins-medium">
-            <input type="text" id="depart" name="depart" placeholder="Depart">
-        </div>
-        <div class="form-return poppins-medium">
-            <input type="text" id="return" name="return" placeholder="Return">
         </div>
         <button class="form-button">Find My Alpine Ride</button>
     </form>
@@ -82,26 +90,41 @@
     </div>
     <section class="photos-section">
         <p class="section-header">Glimpses of Glory</p>
-        <div class="photos">
-            <div class="grid-photo">
-                <img src="./images/photo_1_360.png" alt="photo_1_360">
-            </div>
-            <div class="grid-photo">
-                <img src="./images/photo_2_360.png" alt="photo_2_360">
-            </div>
-            <div class="grid-photo">
-                <img src="./images/photo_3_360.png" alt="photo_3_360">
-            </div>
-            <div class="grid-photo">
-                <img src="./images/photo_4_360.png" alt="photo_4_360">
-            </div>
-            <div class="grid-photo">
-                <img src="./images/photo_5_360.png" alt="photo_5_360">
-            </div>
-        </div>
+<div class="photos">
+    <div class="item-1">
+        <picture>
+            <source media="(min-width: 768px)" srcset="./images/photo_1_768.png">
+            <img src="./images/photo_1_360.png" alt="photo_1">
+        </picture>
+    </div>
+    <div class="item-2">
+        <picture>
+            <source media="(min-width: 768px)" srcset="./images/photo_2_768.png">
+            <img src="./images/photo_2_360.png" alt="photo_2">
+        </picture>
+    </div>
+    <div class="item-3">
+        <picture>
+            <source media="(min-width: 768px)" srcset="./images/photo_3_768.png">
+            <img src="./images/photo_3_360.png" alt="photo_3">
+        </picture>
+    </div>
+    <div class="item-4">
+        <picture>
+            <source media="(min-width: 768px)" srcset="./images/photo_4_768.png">
+            <img src="./images/photo_4_360.png" alt="photo_4">
+        </picture>
+    </div>
+    <div class="item-5">
+        <picture>
+            <source media="(min-width: 768px)" srcset="./images/photo_5_768.png">
+            <img src="./images/photo_5_360.png" alt="photo_5">
+        </picture>
+    </div>
+</div>
     </section>
     <section class="apps-section">
-        <p class="apps-section-header">Free downloads app now!</p>
+        <div class="apps-section-header">Free downloads app now!</div>
         <div class="apps-logos">
             <div class="app-logo">
                 <img src="./images/logo_Google_Play_360.png" alt="logo_Google_Play_360">

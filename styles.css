@@ -5,7 +5,12 @@
 }
 
 body {
-    background-color: rgb(245, 245, 245);
+    background: radial-gradient(circle at center,
+            rgb(227, 239, 253) 0%,
+            rgb(235, 241, 250) 30%,
+            rgb(240, 244, 250) 60%,
+            rgb(245, 245, 245) 100%);
+    min-height: 100vh;
 }
 
 .poppins-regular {
@@ -39,6 +44,24 @@ body {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.logo-and-name {
+    display: flex;
+    font-size: 34px;
+    font-family: "Poppins";
+    font-weight: 400;
+    gap: 10px;
+}
+
+.header-text {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .header-text {
+        visibility: visible;
+    }
 }
 
 .form-header {
@@ -85,6 +108,14 @@ H1 {
     padding-top: 20px;
 }
 
+@media (min-width: 768px) {
+    .section-header {
+        font-size: 64px;
+        font-family: "Poppins";
+        font-weight: 700;
+    }
+}
+
 input[type="radio"] {
     accent-color: rgb(0, 106, 245);
     width: 18px;
@@ -118,6 +149,49 @@ input[type="text"] {
     gap: 5px;
     justify-content: center;
     align-items: center;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .form-inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+.inputs-group-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inputs-group-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inputs-group-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inputs-group-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
 }
 
 .form-departure {
@@ -181,9 +255,22 @@ input[type="text"] {
 .grid-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
     padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .achievement-indicators {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        background-color: rgb(5, 120, 255);
+        color: white;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
 
 .goal {
@@ -192,10 +279,26 @@ input[type="text"] {
     font-weight: 700;
 }
 
+@media (min-width: 768px) {
+    .goal {
+        font-size: 50px;
+        font-family: "Poppins";
+        font-weight: 700;
+    }
+}
+
 .goal-text {
     font-size: 16px;
     font-family: "Poppins";
     font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .goal-text {
+        font-size: 20px;
+        font-family: "Poppins";
+        font-weight: 500;
+    }
 }
 
 .photos-section {
@@ -205,14 +308,100 @@ input[type="text"] {
     padding-right: 20px;
 }
 
+@media (min-width: 768px) {
+    .photos-section {
+        padding-bottom: 128px;
+        padding-top: 128px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
 .photos {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "first first"
+            "second second"
+            "third fourth"
+            "fifth fifth";
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .photos img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.item-1 {
+    grid-area: first;
+}
+
+.item-2 {
+    grid-area: second;
+}
+
+.item-3 {
+    grid-area: third;
+}
+
+.item-4 {
+    grid-area: fourth;
+}
+
+.item-5 {
+    grid-area: fifth;
 }
 
 .apps-section {
     background-color: rgb(255, 197, 1);
+}
+
+@media (min-width: 768px) {
+    .apps-section {
+        padding-left: 121px;
+        padding-right: 121px;
+        padding-bottom: 128px;
+        padding-top: 128px;
+    }
+}
+
+@media (min-width: 768px) {
+    .apps-section {
+        font-size: 40px;
+        font-family: "Poppins";
+        font-weight: 700;
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .apps-section {
+        font-size: 40px;
+        font-family: "Poppins";
+        font-weight: 700;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 40px;
+        padding-top: 60px;
+        text-align: center;
+    }
 }
 
 .apps-section-header {
@@ -236,7 +425,27 @@ input[type="text"] {
     padding-top: 20px;
 }
 
-.app-logo {}
+@media (min-width: 768px) {
+    .apps-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .apps-logos div:first-child {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 .FAQ-section {
     padding-top: 64px;
@@ -295,12 +504,21 @@ input[type="text"] {
     font-family: "Poppins";
     font-weight: 400;
     display: flex;
-
     justify-content: center;
     padding-bottom: 64px;
     padding-top: 64px;
     color: black;
+    width: 90%;
     transform: translateY(-30%);
+}
+
+@media (min-width: 768px) {
+    .contacts-section {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .contacts-section-header {
@@ -339,10 +557,21 @@ input[type="text"] {
     padding-top: 10px;
 }
 
+@media (min-width: 768px) {
+    .contacts-address {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
 footer {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: rgb(5, 120, 255);
     font-family: "Poppins";
     color: white;
@@ -359,6 +588,7 @@ footer {
 .footer-logo-with-text {
     padding-bottom: 20px;
     padding-top: 20px;
+    width: 100%;
 }
 
 .footer-links-grid {
@@ -368,6 +598,17 @@ footer {
     width: 90%;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .footer-links-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 }
 
 .footer-grid-section {
@@ -400,9 +641,18 @@ footer {
     padding-bottom: 40px;
 }
 
-/*
-.logo-and-name {
-    display: flex;
-    font-size: 34px;
+@media (min-width: 768px) {
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
-*/
