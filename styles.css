@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-blue: rgb(5, 120, 255);
+}
+
 body {
     background: radial-gradient(circle at center,
             rgb(227, 239, 253) 0%,
@@ -11,6 +15,7 @@ body {
             rgb(240, 244, 250) 60%,
             rgb(245, 245, 245) 100%);
     min-height: 100vh;
+    font-family: "Poppins";
 }
 
 .poppins-regular {
@@ -49,7 +54,6 @@ body {
 .logo-and-name {
     display: flex;
     font-size: 34px;
-    font-family: "Poppins";
     font-weight: 400;
     gap: 10px;
 }
@@ -62,6 +66,49 @@ body {
     .header-text {
         visibility: visible;
     }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.right-side {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+    
+    .left-side {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .right-side {
+        display: block;
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-bottom: 64px;
+    }
+
+    .header {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+
+
+}
+
+.right-side img {
+    width: 640px;
+    height: 704px;
 }
 
 .form-header {
@@ -89,20 +136,21 @@ body {
     border-radius: 10px;
     height: 34px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 H1 {
-    font: bold;
+    font-weight: 700;
     font-size: 32px;
-    font-family: "Poppins";
 }
 
 .section-header {
-    font: bold;
     font-size: 32px;
-    font-family: "Poppins";
     font-weight: 700;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -111,13 +159,12 @@ H1 {
 @media (min-width: 768px) {
     .section-header {
         font-size: 64px;
-        font-family: "Poppins";
         font-weight: 700;
     }
 }
 
 input[type="radio"] {
-    accent-color: rgb(0, 106, 245);
+    accent-color: var(--background-blue);
     width: 18px;
     height: 24px;
     text-decoration-color: blue;
@@ -131,7 +178,6 @@ input[type="text"] {
     box-shadow: none;
     width: 90%;
     line-height: 150%;
-    font-family: "Poppins";
     font-weight: 500;
 }
 
@@ -164,7 +210,6 @@ input[type="text"] {
         gap: 20px;
     }
 }
-
 
 .inputs-group-1 {
     display: flex;
@@ -235,9 +280,8 @@ input[type="text"] {
     padding-top: 16px;
     padding-left: 24px;
     padding-right: 24px;
-    font-family: "Poppins";
     font-weight: 700;
-    background-color: rgb(5, 120, 255);
+    background-color: var(--background-blue);
     color: white;
     border-radius: 10px;
     border-style: none;
@@ -248,7 +292,7 @@ input[type="text"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background-color: rgb(5, 120, 255);
+    background-color: var(--background-blue);
     color: white;
 }
 
@@ -264,7 +308,7 @@ input[type="text"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        background-color: rgb(5, 120, 255);
+        background-color: var(--background-blue);
         color: white;
         padding-bottom: 64px;
         padding-top: 64px;
@@ -275,28 +319,24 @@ input[type="text"] {
 
 .goal {
     font-size: 40px;
-    font-family: "Poppins";
     font-weight: 700;
 }
 
 @media (min-width: 768px) {
     .goal {
         font-size: 50px;
-        font-family: "Poppins";
         font-weight: 700;
     }
 }
 
 .goal-text {
     font-size: 16px;
-    font-family: "Poppins";
     font-weight: 500;
 }
 
 @media (min-width: 768px) {
     .goal-text {
         font-size: 20px;
-        font-family: "Poppins";
         font-weight: 500;
     }
 }
@@ -381,7 +421,6 @@ input[type="text"] {
 @media (min-width: 768px) {
     .apps-section {
         font-size: 40px;
-        font-family: "Poppins";
         font-weight: 700;
         padding-left: 65px;
         padding-right: 65px;
@@ -394,7 +433,6 @@ input[type="text"] {
 @media (min-width: 768px) {
     .apps-section {
         font-size: 40px;
-        font-family: "Poppins";
         font-weight: 700;
         padding-left: 10%;
         padding-right: 10%;
@@ -406,7 +444,6 @@ input[type="text"] {
 
 .apps-section-header {
     font-size: 32px;
-    font-family: "Poppins";
     font-weight: 700;
     padding-left: 10%;
     padding-right: 10%;
@@ -453,7 +490,6 @@ input[type="text"] {
 
 .FAQ-section-header {
     font-size: 64px;
-    font-family: "Poppins";
     font-weight: 700;
     padding-left: 10%;
     padding-right: 10%;
@@ -489,19 +525,16 @@ input[type="text"] {
 
 .FAQ-element-text {
     font-size: 18px;
-    font-family: "Poppins";
     font-weight: 500;
 }
 
 .FAQ-element-icon {
     font-size: 18px;
-    font-family: "Poppins";
     font-weight: 500;
 }
 
 .contacts-section {
     font-size: 20px;
-    font-family: "Poppins";
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -523,7 +556,6 @@ input[type="text"] {
 
 .contacts-section-header {
     font-size: 36px;
-    font-family: "Poppins";
     font-weight: 700;
     padding-left: 10%;
     padding-right: 10%;
@@ -572,8 +604,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(5, 120, 255);
-    font-family: "Poppins";
+    background-color: var(--background-blue);
     color: white;
 }
 
