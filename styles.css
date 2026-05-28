@@ -6,6 +6,19 @@
 
 :root {
     --background-blue: rgb(5, 120, 255);
+    --primary-black: rgb(32, 32, 32)
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
@@ -18,30 +31,6 @@ body {
     font-family: "Poppins";
 }
 
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -49,6 +38,32 @@ body {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+nav {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--primary-black);
+}
+
+.navigation a:last-child {
+    text-decoration: none;
+    color: var(--primary-black);
+    font-weight: 600;
 }
 
 .logo-and-name {
@@ -59,7 +74,7 @@ body {
 }
 
 .header-text {
-    visibility: hidden;
+    display: none;
 }
 
 main {
@@ -70,6 +85,11 @@ main {
 
 .right-side {
     display: none;
+}
+
+.description-text {
+    font-weight: 400;
+    font-style: normal;
 }
 
 H1 {
@@ -118,6 +138,11 @@ H1 {
     font-size: 14px;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.inputs-header {
+    font-weight: 600;
+    font-style: normal;
 }
 
 .section-header {
@@ -384,7 +409,7 @@ input[type="text"] {
     justify-content: center;
     padding-bottom: 64px;
     padding-top: 64px;
-    color: black;
+    color: var(--primary-black);
     width: 90%;
     transform: translateY(-30%);
 }
@@ -487,8 +512,30 @@ footer {
 }
 
 @media (min-width: 768px) {
+    H1 {
+        font-size: 64px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .header-text {
-        visibility: visible;
+        display: block;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-side {
+        width: 90%;
     }
 
     .section-header {
@@ -496,7 +543,7 @@ footer {
         font-weight: 700;
     }
 
-    .form-header-text {
+    .description-text {
         font-size: 16px;
     }
 
@@ -529,10 +576,8 @@ footer {
     }
 
     .photos-section {
-        padding-bottom: 128px;
-        padding-top: 128px;
-        padding-left: 32px;
-        padding-right: 32px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .photos {
@@ -579,6 +624,16 @@ footer {
         justify-content: center;
     }
 
+    .FAQ-section-header {
+        width: 100%;
+        text-align: left;
+    }
+
+    .FAQs {
+        width: 100%;
+        margin-bottom: 128px;
+    }
+
     .contacts-section {
         display: flex;
         width: 70%;
@@ -617,6 +672,18 @@ footer {
         padding-bottom: 40px;
     }
 
+
+    .footer-wrapper {
+        width: 85%;
+        margin: 0, auto;
+    }
+
+    .copyright {
+        width: 85%;
+        padding-left: 0;
+    }
+
+
 }
 
 @media (min-width: 1440px) {
@@ -626,12 +693,16 @@ footer {
         flex-wrap: nowrap;
     }
 
+    nav {
+        display: block;
+    }
+
     H1 {
         font-size: 64px;
     }
 
     .burger {
-        visibility: hidden;
+        display: none;
     }
 
     .header {

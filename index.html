@@ -24,15 +24,21 @@
             <source media="(min-width: 768px)" srcset="./images/Menu_768.png">
             <img src="./images/Menu_360.png" alt="burger">
         </picture>
+        <nav>
+            <div class="navigation">
+                <a href="#apps">Mobile App</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#contacts">Contact</a>
+                <a href="">Sign Up</a>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="left-side">
             <section class="form-header">
                 <H1>Skip the Climbing, Catch the Bus</H1>
-                <p class="poppins-regular">We sell tickets to the best seats in the house – houses on wheels, that is!
-                    Get
-                    ready
-                    for jaw-dropping views without breaking a sweat.</p>
+                <p class="description-text">We sell tickets to the best seats in the house – houses on wheels, that is!
+                    Get ready for jaw-dropping views without breaking a sweat.</p>
             </section>
             <form class="form">
                 <div class="form-type-and-persons-counter">
@@ -54,19 +60,19 @@
                 </div>
                 <div class="form-inputs">
                     <div class="inputs-group-1">
-                        <div class="poppins-semibold">Departure</div>
+                        <div class="inputs-header">Departure</div>
                         <div class="form-departure poppins-medium">
                             <input type="text" id="departure" name="departure" placeholder="Your City/Station">
                         </div>
                     </div>
                     <div class="inputs-group-2">
-                        <div class="poppins-semibold">Arrival</div>
+                        <div class="inputs-header">Arrival</div>
                         <div class="form-arrival poppins-medium">
                             <input type="text" id="arrival" name="arrival" placeholder="Where to?">
                         </div>
                     </div>
                     <div class="inputs-group-3">
-                        <div class="poppins-semibold">Pick your lucky day</div>
+                        <div class="inputs-header">Pick your lucky day</div>
                         <div class="form-depart poppins-medium">
                             <input type="text" id="depart" name="depart" placeholder="Depart">
                         </div>
@@ -138,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section class="apps-section">
+    <section id="apps" class="apps-section">
         <div class="apps-section-header">Free downloads app now!</div>
         <div class="apps-logos">
             <div class="app-logo">
@@ -152,7 +158,7 @@
             </div>
         </div>
     </section>
-    <section class="FAQ-section">
+    <section id="faqs" class="FAQ-section">
         <p class="FAQ-section-header">FAQs.</p>
         <div class="FAQs">
             <div class="FAQ-element">
@@ -182,7 +188,7 @@
         </div>
     </section>
     <footer>
-        <section class="contacts-section">
+        <section id="contacts" class="contacts-section">
             <div class="contacts">
                 <p class="contacts-section-header">Contact us</p>
                 <div class="contacts-phone-and-email">
