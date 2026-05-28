@@ -630,6 +630,10 @@ footer {
         font-size: 64px;
     }
 
+    .burger {
+        visibility: hidden;
+    }
+
     .header {
         display: flex;
         justify-content: space-between;
