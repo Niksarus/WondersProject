@@ -619,7 +619,7 @@ footer {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     main {
         display: flex;
         flex-direction: row;
@@ -657,8 +657,6 @@ footer {
 
     .right-side {
         display: block;
-        padding-left: 64px;
-        padding-right: 64px;
         padding-bottom: 64px;
     }
 
