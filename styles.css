@@ -62,12 +62,6 @@ body {
     visibility: hidden;
 }
 
-@media (min-width: 768px) {
-    .header-text {
-        visibility: visible;
-    }
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -78,32 +72,14 @@ main {
     display: none;
 }
 
-@media (min-width: 1200px) {
-    main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+H1 {
+    font-weight: 700;
+    font-size: 32px;
 }
-    
-    .left-side {
-        padding-left: 64px;
-        padding-right: 64px;
-    }
 
-    .right-side {
-        display: block;
-        padding-left: 64px;
-        padding-right: 64px;
-        padding-bottom: 64px;
-    }
-
-    .header {
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-
-
-
+.form-header-text {
+    font-weight: 400;
+    font-size: 11px;
 }
 
 .right-side img {
@@ -144,23 +120,11 @@ main {
     padding-right: 5%;
 }
 
-H1 {
-    font-weight: 700;
-    font-size: 32px;
-}
-
 .section-header {
     font-size: 32px;
     font-weight: 700;
     padding-bottom: 20px;
     padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .section-header {
-        font-size: 64px;
-        font-weight: 700;
-    }
 }
 
 input[type="radio"] {
@@ -201,14 +165,6 @@ input[type="text"] {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-@media (min-width: 768px) {
-    .form-inputs {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
 }
 
 .inputs-group-1 {
@@ -303,42 +259,14 @@ input[type="text"] {
     padding: 10px;
 }
 
-@media (min-width: 768px) {
-    .achievement-indicators {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        background-color: var(--background-blue);
-        color: white;
-        padding-bottom: 64px;
-        padding-top: 64px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
 .goal {
     font-size: 40px;
     font-weight: 700;
 }
 
-@media (min-width: 768px) {
-    .goal {
-        font-size: 50px;
-        font-weight: 700;
-    }
-}
-
 .goal-text {
     font-size: 16px;
     font-weight: 500;
-}
-
-@media (min-width: 768px) {
-    .goal-text {
-        font-size: 20px;
-        font-weight: 500;
-    }
 }
 
 .photos-section {
@@ -348,41 +276,12 @@ input[type="text"] {
     padding-right: 20px;
 }
 
-@media (min-width: 768px) {
-    .photos-section {
-        padding-bottom: 128px;
-        padding-top: 128px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
-
 .photos {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
-}
-
-@media (min-width: 768px) {
-    .photos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "first first"
-            "second second"
-            "third fourth"
-            "fifth fifth";
-        gap: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    .photos img {
-        width: 100%;
-        height: 100%;
-    }
 }
 
 .item-1 {
@@ -409,39 +308,6 @@ input[type="text"] {
     background-color: rgb(255, 197, 1);
 }
 
-@media (min-width: 768px) {
-    .apps-section {
-        padding-left: 121px;
-        padding-right: 121px;
-        padding-bottom: 128px;
-        padding-top: 128px;
-    }
-}
-
-@media (min-width: 768px) {
-    .apps-section {
-        font-size: 40px;
-        font-weight: 700;
-        padding-left: 65px;
-        padding-right: 65px;
-        padding-bottom: 64px;
-        padding-top: 64px;
-        text-align: center;
-    }
-}
-
-@media (min-width: 768px) {
-    .apps-section {
-        font-size: 40px;
-        font-weight: 700;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 40px;
-        padding-top: 60px;
-        text-align: center;
-    }
-}
-
 .apps-section-header {
     font-size: 32px;
     font-weight: 700;
@@ -460,28 +326,6 @@ input[type="text"] {
     gap: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .apps-logos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 768px) {
-    .apps-logos div:first-child {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 .FAQ-section {
@@ -545,15 +389,6 @@ input[type="text"] {
     transform: translateY(-30%);
 }
 
-@media (min-width: 768px) {
-    .contacts-section {
-        display: flex;
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
 .contacts-section-header {
     font-size: 36px;
     font-weight: 700;
@@ -589,16 +424,6 @@ input[type="text"] {
     padding-top: 10px;
 }
 
-@media (min-width: 768px) {
-    .contacts-address {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-}
-
 footer {
     position: relative;
     display: flex;
@@ -629,17 +454,6 @@ footer {
     width: 90%;
     padding-bottom: 20px;
     padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .footer-links-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
-        width: 100%;
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
 }
 
 .footer-grid-section {
@@ -673,6 +487,122 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .header-text {
+        visibility: visible;
+    }
+
+    .section-header {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .form-header-text {
+        font-size: 16px;
+    }
+
+    .form-inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .achievement-indicators {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        background-color: var(--background-blue);
+        color: white;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .goal {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .goal-text {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .photos-section {
+        padding-bottom: 128px;
+        padding-top: 128px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "first first"
+            "second second"
+            "third fourth"
+            "fifth fifth";
+        gap: 20px;
+    }
+
+    .photos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .apps-section {
+        font-size: 40px;
+        font-weight: 700;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 40px;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .apps-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .apps-logos div:first-child {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-section {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-address {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .footer-links-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
     .copyright {
         display: flex;
         flex-direction: column;
@@ -686,4 +616,139 @@ footer {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+}
+
+@media (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    H1 {
+        font-size: 64px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .logo-and-name {
+        display: flex;
+        font-size: 34px;
+        font-weight: 400;
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 10px;
+    }
+
+    .form-header-text {
+        font-size: 16px;
+    }
+
+    .left-side {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .right-side {
+        display: block;
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-bottom: 64px;
+    }
+
+    .achievement-indicators {
+        font-size: 50px;
+    }
+
+    .achievement-indicators {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section-header {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .photos-section {
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-bottom: 128px;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "first first third fourth"
+            "first first third fourth"
+            "first first third fourth"
+            "second second third fourth"
+            "second second fifth fifth"
+            "second second fifth fifth";
+        gap: 20px;
+    }
+
+    .item-3,
+    .item-4 {
+        height: 100%;
+    }
+
+    .apps-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apps-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        gap: 128px;
+    }
+
+    .apps-section-header {
+        font-size: 62px;
+    }
+
+    .apps-logos div:first-child {
+        width: auto;
+        padding-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FAQ-section {
+        padding-left: 177px;
+        padding-right: 177px;
+        padding-bottom: 128px;
+    }
+
+    .contacts-section {
+        max-width: 40%;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .copyright {
+        width: 95%;
+        padding-bottom: 64px;
+    }
+
 }
