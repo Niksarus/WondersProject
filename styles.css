@@ -151,9 +151,7 @@ input[type="radio"] {
 input[type="text"] {
     outline: none;
     border: none;
-    background-image: none;
     background-color: transparent;
-    box-shadow: none;
     width: 90%;
     line-height: 150%;
     font-weight: 500;
@@ -204,7 +202,7 @@ input[type="text"] {
     align-items: start;
 }
 
-.form-inputs > .inputs-group:last-child > .form-item{
+.form-inputs .inputs-group:last-child .form-item {
     width: 100%;
 }
 
@@ -617,8 +615,8 @@ footer {
         align-items: start;
         font-size: 16px;
         font-weight: 600;
-        width: 100%;
-        padding-left: 40px;
+        width: 85%;
+        padding-left: 0;
         padding-right: 40px;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -627,14 +625,8 @@ footer {
 
     .footer-wrapper {
         width: 85%;
-        margin: 0, auto;
+        margin: 0 auto;
     }
-
-    .copyright {
-        width: 85%;
-        padding-left: 0;
-    }
-
 
 }
 
