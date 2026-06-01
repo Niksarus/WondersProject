@@ -5,20 +5,9 @@
 }
 
 :root {
-    --background-blue: rgb(5, 120, 255);
-    --primary-black: rgb(32, 32, 32)
-}
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    --white: rgb(255, 255, 255);
+    --primary-blue: rgb(5, 120, 255);
+    --primary-black: rgb(32, 32, 32);
 }
 
 body {
@@ -128,7 +117,7 @@ H1 {
 }
 
 .form-type-and-persons-counter {
-    background-color: white;
+    background-color: var(--white);
     border-radius: 10px;
     height: 34px;
     display: flex;
@@ -153,10 +142,10 @@ H1 {
 }
 
 input[type="radio"] {
-    accent-color: var(--background-blue);
+    accent-color: var(--primary-blue);
     width: 18px;
     height: 24px;
-    text-decoration-color: blue;
+    text-decoration-color: var(--primary-blue);
 }
 
 input[type="text"] {
@@ -192,68 +181,31 @@ input[type="text"] {
     gap: 20px;
 }
 
-.inputs-group-1 {
+.inputs-group {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
 }
 
-.inputs-group-2 {
+.form-item {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 53px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    font-style: normal;
 }
 
-.inputs-group-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.inputs-group-4 {
-    display: flex;
-    flex-direction: column;
+.form-inputs > .inputs-group:last-child {
     justify-content: end;
-    gap: 10px;
+    align-items: start;
 }
 
-.form-departure {
-    background-color: white;
-    border-radius: 10px;
-    height: 53px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.form-arrival {
-    background-color: white;
-    border-radius: 10px;
-    height: 53px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.form-depart {
-    background-color: white;
-    border-radius: 10px;
-    height: 53px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.form-return {
-    background-color: white;
-    border-radius: 10px;
-    height: 53px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.form-inputs > .inputs-group:last-child > .form-item{
+    width: 100%;
 }
 
 .form-button {
@@ -262,8 +214,8 @@ input[type="text"] {
     padding-left: 24px;
     padding-right: 24px;
     font-weight: 700;
-    background-color: var(--background-blue);
-    color: white;
+    background-color: var(--primary-blue);
+    color: var(--white);
     border-radius: 10px;
     border-style: none;
     font-size: 20px;
@@ -273,8 +225,8 @@ input[type="text"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background-color: var(--background-blue);
-    color: white;
+    background-color: var(--primary-blue);
+    color: var(--white);
 }
 
 .grid-item {
@@ -389,7 +341,7 @@ input[type="text"] {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(32, 32, 32);
+    border-bottom: 1px solid var(--primary-black);
 }
 
 .FAQ-element-text {
@@ -434,8 +386,8 @@ input[type="text"] {
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
-    border: 1px solid rgb(32, 32, 32);
-    background-color: rgb(245, 245, 245);
+    border: 1px solid var(--primary-black);
+    background-color: var(--white);
     border-radius: 10px;
 }
 
@@ -454,8 +406,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--background-blue);
-    color: white;
+    background-color: var(--primary-blue);
+    color: var(--white);
 }
 
 .footer-wrapper {
@@ -557,8 +509,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        background-color: var(--background-blue);
-        color: white;
+        background-color: var(--primary-blue);
+        color: var(--white);
         padding-bottom: 64px;
         padding-top: 64px;
         padding-left: 32px;
