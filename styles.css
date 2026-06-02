@@ -16,7 +16,6 @@ body {
             rgb(235, 241, 250) 30%,
             rgb(240, 244, 250) 60%,
             rgb(245, 245, 245) 100%);
-    min-height: 100vh;
     font-family: "Poppins";
 }
 
