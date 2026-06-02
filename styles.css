@@ -101,8 +101,6 @@ H1 {
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .form {
@@ -110,8 +108,6 @@ H1 {
     flex-direction: column;
     padding-bottom: 40px;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     gap: 24px;
 }
 
@@ -221,7 +217,7 @@ input[type="text"] {
     font-size: 20px;
 }
 
-.achievement-indicators {
+.achievements-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -514,7 +510,7 @@ footer {
         gap: 20px;
     }
 
-    .achievement-indicators {
+    .achievements-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -671,6 +667,8 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 1440px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     main {
@@ -700,14 +698,20 @@ footer {
         padding-bottom: 64px;
     }
 
-    .achievement-indicators {
+    .achievements {
         font-size: 50px;
+        width: 100%;
+        background-color: var(--primary-blue);
     }
 
-    .achievement-indicators {
+    .achievements-wrapper {
         width: 1440px;
+        display: flex;
+        justify-content: space-between;
         margin: 0 auto;
-        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        color: var(--white);
+        padding: 64px;
     }
 
     .section-header {
@@ -793,8 +797,10 @@ footer {
     }
 
     .FAQ-section {
-        padding-left: 177px;
-        padding-right: 177px;
+        width: 1440px;
+        margin: 0 auto;
+        padding-left: 32px;
+        padding-right: 32px;
         padding-bottom: 128px;
     }
 
@@ -804,14 +810,20 @@ footer {
 
     .footer-wrapper {
         display: flex;
-        width: 90%;
+        width: 1440px;
+        margin: 0 auto;
+        padding-left: 64px;
+        padding-right: 64px;
         flex-direction: row;
         justify-content: center;
         align-items: start;
     }
 
     .copyright {
-        width: 90%;
+        width: 1440px;
+        margin: 0 auto;
+        padding-left: 64px;
+        padding-right: 64px;
         padding-bottom: 64px;
     }
 
