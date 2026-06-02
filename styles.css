@@ -134,7 +134,7 @@ H1 {
 }
 
 .section-header {
-    width: 1440px;
+    width: 100%;
     font-size: 32px;
     font-weight: 700;
     padding-bottom: 20px;
@@ -499,6 +499,9 @@ footer {
     .section-header {
         font-size: 64px;
         font-weight: 700;
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .description-text {
@@ -536,12 +539,6 @@ footer {
     .photos-section {
         width: 100%;
         margin: 0 auto;
-    }
-
-    .section-header {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
     }
 
     .photos {
@@ -673,9 +670,12 @@ footer {
     .header {
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+        width: 1440px;
+    }
+
+    main {
+        width: 1440px;
+        margin: 0 auto;
     }
 
     .logo-and-name {
@@ -683,6 +683,7 @@ footer {
         font-size: 34px;
         font-weight: 400;
         gap: 10px;
+        padding-left: 64px;
     }
 
     .form-header-text {
@@ -704,32 +705,24 @@ footer {
     }
 
     .achievement-indicators {
+        width: 1440px;
+        margin: 0 auto;
         grid-template-columns: repeat(4, 1fr);
     }
 
     .section-header {
         font-size: 64px;
         font-weight: 700;
+        padding-left: 64px;
+        width: 1440px;
     }
 
     .photos-section {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .photos {
-        /*
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "first first third fourth"
-            "first first third fourth"
-            "first first third fourth"
-            "second second third fourth"
-            "second second fifth fifth"
-            "second second fifth fifth";
-        gap: 20px;
-        */
         display: grid;
         grid-template-columns: 528px 305px 416px;
         grid-template-rows: 376px 88px 264px;
