@@ -71,6 +71,11 @@ main {
     flex-wrap: nowrap;
 }
 
+.left-side {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .right-side {
     display: none;
 }
@@ -135,8 +140,8 @@ H1 {
     font-weight: 700;
     padding-bottom: 20px;
     padding-top: 20px;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 input[type="radio"] {
@@ -312,8 +317,8 @@ input[type="text"] {
 .FAQ-section-header {
     font-size: 64px;
     font-weight: 700;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: left;
@@ -325,8 +330,8 @@ input[type="text"] {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-bottom: 128px;
 }
 
@@ -381,7 +386,8 @@ input[type="text"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    padding-right: 20px;
+    padding-left: 20px;
     gap: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -428,7 +434,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    width: 90%;
+    width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -475,6 +481,10 @@ footer {
         margin: 0 auto;
     }
 
+    .logo-and-name>picture {
+        padding-top: 5px;
+    }
+
     .header-text {
         display: block;
     }
@@ -488,8 +498,8 @@ footer {
 
     .left-side {
         width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
 
     .section-header {
@@ -502,6 +512,11 @@ footer {
 
     .description-text {
         font-size: 16px;
+    }
+
+    .header {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     .form-inputs {
@@ -653,6 +668,7 @@ footer {
 
     nav {
         display: block;
+        padding-top: 0px;
     }
 
     H1 {
@@ -668,7 +684,7 @@ footer {
         justify-content: space-between;
         width: 1440px;
         padding-left: 0px;
-        padding-right: 0px;
+        padding-right: 64px;
     }
 
     main {
@@ -682,6 +698,10 @@ footer {
         font-weight: 400;
         gap: 10px;
         padding-left: 64px;
+    }
+
+    .logo-and-name>picture {
+        padding-top: 5px;
     }
 
     .form-header-text {
