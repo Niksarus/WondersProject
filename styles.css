@@ -116,6 +116,27 @@ H1 {
     gap: 24px;
 }
 
+.incrementButton {
+    border: none;
+    text-decoration: none;
+    background: none;
+    font-size: 24px;
+    color: var(--primary-blue);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.decrementButton {
+    border: none;
+    text-decoration: none;
+    background: none;
+    font-size: 28px;
+    color: var(--primary-blue);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
 .form-type-and-persons-counter {
     background-color: var(--white);
     border-radius: 10px;
@@ -706,6 +727,16 @@ footer {
 
     .form-header-text {
         font-size: 16px;
+    }
+
+    .incrementButton {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .decrementButton {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .left-side {
