@@ -10,6 +10,10 @@
     --primary-black: rgb(32, 32, 32);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: radial-gradient(circle at center,
             rgb(227, 239, 253) 0%,
@@ -30,36 +34,33 @@ body {
 
 nav {
     display: none;
+    position: absolute;
+    background-color: var(--primary-blue);
+    padding: 64px 20px;
+    position: absolute;
+    top: 116px;
+    left: 0;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    gap: 64px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 a {
     transition: transform 0.3s ease-in-out;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 64px;
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 10px;
-}
-
 ul {
     list-style: none;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: var(--primary-black);
-}
-
-.navigation li:last-child a {
-    text-decoration: none;
-    color: var(--primary-black);
-    font-weight: 600;
 }
 
 .logo-and-name {
@@ -518,6 +519,11 @@ footer {
         display: block;
     }
 
+    .navigation {
+        font-size: 48px;
+        gap: 96px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -697,7 +703,31 @@ footer {
 
     nav {
         display: block;
+        position: static;
+        background-color: transparent;
         padding-top: 0px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 64px;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: var(--primary-black);
+    }
+
+    .navigation li:last-child a {
+        text-decoration: none;
+        color: var(--primary-black);
+        font-weight: 600;
     }
 
     H1 {
