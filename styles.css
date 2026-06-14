@@ -15,10 +15,9 @@ html {
 }
 
 body {
-    background: radial-gradient(circle at center,
-            rgb(227, 239, 253) 0%,
-            rgb(235, 241, 250) 30%,
-            rgb(240, 244, 250) 60%,
+    background: linear-gradient(to top,
+            rgb(245, 245, 245) 0%,
+            rgb(221, 236, 255) 50%,
             rgb(245, 245, 245) 100%);
     font-family: "Poppins";
 }
