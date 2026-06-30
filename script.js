@@ -38,3 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
         incrementButton.addEventListener("click", decrementPeopleCounter);
     }
 });
+
+//функция изменения + на - и обратно при открывании пункта FAQ
+document.addEventListener('DOMContentLoaded', function() {
+    //Выбираем все FAQs details
+    document.querySelectorAll('.FAQs details').forEach(detail => {
+        //На каждого вешаем toggle по условию открыт/закрыт
+        detail.addEventListener('toggle', function() {
+            const icon = this.querySelector('.FAQ-element-icon');
+            //Меняем символ через тернарный оператор
+            icon.textContent = this.open ? '-' : '+';
+        });
+    });
+});
