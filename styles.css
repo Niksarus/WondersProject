@@ -42,6 +42,10 @@ nav {
     width: 100%;
 }
 
+.navigation_menu.menu_active {
+    display: block;
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
@@ -734,7 +738,7 @@ footer {
         font-size: 64px;
     }
 
-    .burger {
+    .menu_icon {
         display: none;
     }
 
@@ -916,4 +920,106 @@ footer {
         padding-bottom: 64px;
     }
 
+}
+
+
+/* === Стили для flatpickr === */
+.flatpickr-calendar {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(5, 120, 255, 0.15) !important;
+    font-family: 'Poppins', sans-serif !important;
+    overflow: hidden !important;
+    background: var(--white) !important;
+    border: 1px solid rgba(5, 120, 255, 0.1) !important;
+}
+
+.flatpickr-calendar .flatpickr-month {
+    background: var(--white) !important;
+    color: var(--primary-black) !important;
+    border-bottom: 1px solid rgba(5, 120, 255, 0.1) !important;
+}
+
+.flatpickr-calendar .flatpickr-current-month {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: var(--primary-black) !important;
+}
+
+.flatpickr-calendar .flatpickr-prev-month,
+.flatpickr-calendar .flatpickr-next-month {
+    color: var(--primary-blue) !important;
+}
+
+.flatpickr-calendar .flatpickr-prev-month svg,
+.flatpickr-calendar .flatpickr-next-month svg {
+    fill: var(--primary-blue) !important;
+}
+
+.flatpickr-calendar .flatpickr-weekday {
+    color: var(--primary-blue) !important;
+    font-weight: 600 !important;
+}
+
+.flatpickr-calendar .flatpickr-day {
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    color: var(--primary-black) !important;
+}
+
+.flatpickr-calendar .flatpickr-day:hover:not(.selected):not(.startRange):not(.endRange) {
+    background: rgba(5, 120, 255, 0.08) !important;
+}
+
+.flatpickr-calendar .flatpickr-day.today {
+    border-color: var(--primary-blue) !important;
+    color: var(--primary-blue) !important;
+}
+
+/* ВЫБРАННЫЙ ДИАПАЗОН - меняем зеленый на синий */
+.flatpickr-calendar .flatpickr-day.inRange {
+    background: rgba(5, 120, 255, 0.08) !important;
+    border-color: transparent !important;
+}
+
+.flatpickr-calendar .flatpickr-day.startRange,
+.flatpickr-calendar .flatpickr-day.endRange {
+    background: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    color: var(--white) !important;
+}
+
+/* Кнопки */
+.flatpickr-custom-buttons {
+    background: var(--white) !important;
+    padding: 12px 20px !important;
+    border-top: 1px solid rgba(5, 120, 255, 0.1) !important;
+    border-radius: 0 0 12px 12px !important;
+}
+
+.flatpickr-reset-btn {
+    color: var(--primary-black) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.flatpickr-apply-btn {
+    background: var(--primary-blue) !important;
+    color: var(--white) !important;
+    font-family: 'Poppins', sans-serif !important;
+    border-radius: 8px !important;
+}
+
+.flatpickr-apply-btn:hover {
+    background: rgba(5, 120, 255, 0.85) !important;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .flatpickr-calendar {
+        border-radius: 16px 16px 0 0 !important;
+        border: none !important;
+    }
+    
+    .flatpickr-custom-buttons {
+        border-radius: 0 !important;
+    }
 }
